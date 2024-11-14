@@ -1,0 +1,12 @@
+file names
+full_adder_1bit.vhd
+tb_full_adder_1bit.vhd
+
+# Compilación de los archivos VHDL
+ghdl -s full_adder_1bit.vhd       # Analiza la entidad FullAdder
+ghdl -a full_adder_1bit.vhd       # Compila la entidad FullAdder
+ghdl -s tb_full_adder_1bit.vhd    # Analiza el testbench
+ghdl -a tb_full_adder_1bit.vhd    # Compila el testbench
+
+3. Ejecutar la Simulación
+ghdl -r TB_FullAdder --vcd=tb_full_adder_1bit.vcd
