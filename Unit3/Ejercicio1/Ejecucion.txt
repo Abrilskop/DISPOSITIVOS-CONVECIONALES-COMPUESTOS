@@ -1,0 +1,5 @@
+ghdl -s half_adder_1bit.vhd
+ghdl -a half_adder_1bit.vhd
+ghdl -s tb_half_adder_1bit.vhd
+ghdl -a tb_half_adder_1bit.vhd
+ghdl -r tb_half_adder_1bit --vcd=tb_half_adder_1bit.vcd
