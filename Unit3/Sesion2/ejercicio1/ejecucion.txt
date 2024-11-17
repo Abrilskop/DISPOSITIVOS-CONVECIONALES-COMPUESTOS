@@ -1,0 +1,13 @@
+ghdl -s FullAdder_1bit.vhdl   # Analiza el archivo FullAdder_1bit.vhdl
+ghdl -a FullAdder_1bit.vhdl   # Compila el archivo FullAdder_1bit.vhdl
+
+ghdl -s FullAdder_2bits.vhdl  # Analiza el archivo FullAdder_2bits.vhdl
+ghdl -a FullAdder_2bits.vhdl  # Compila el archivo FullAdder_2bits.vhdl
+
+ghdl -s TB_FullAdder_2bits.vhdl   # Analiza el archivo de Testbench
+ghdl -a TB_FullAdder_2bits.vhdl   # Compila el archivo de Testbench
+
+ghdl -e TB_FullAdder_2bits  # Elaborar el testbench
+
+# simulacion del test :D
+ghdl -r TB_FullAdder_2bits --vcd=tb_full_adder_2bits.vcd
